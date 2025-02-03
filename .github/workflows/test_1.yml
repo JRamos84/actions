@@ -7,5 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hola mundo
-        run: echo "Hola Mundo"
+     - name: Hola mundo
+       run: echo "Hola Mundo"
+  other: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ls
+        run: ls -al
