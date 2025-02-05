@@ -5,16 +5,10 @@ on: [push]
 jobs:
   hola:
     runs-on: ubuntu-latest
-
-    services:
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: example
-        ports:
-          - 3306:3306
+    env:
+      My_VAR: Mi variable de entorno
     steps:
       - name: test
-        run: ls
+        run: echo "Valor:" $My_VAR
 
 
